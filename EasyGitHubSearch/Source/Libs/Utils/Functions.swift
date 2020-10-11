@@ -1,0 +1,28 @@
+//
+//  Functions.swift
+//  EasyGitHubSearch
+//
+//  Created by Yevhen Triukhan on 11.10.2020.
+//  Copyright © 2020 Yevhen Triukhan. All rights reserved.
+//
+
+import Foundation
+
+public typealias Handler<T> = (T) -> ()
+public typealias Completion<T> = (T) -> ()
+public typealias Action<T> = (T) -> ()
+
+public typealias EmptyAction = () -> ()
+    
+public func toString(_ cls: AnyClass) -> String {
+    return String(describing: cls)
+}
+
+func libraryFolderPath() -> String {
+    return FileManager.default.urls(for: .libraryDirectory, in: .userDomainMask).first?.path ?? ""
+}
+
+func customize<Value>(_ value: Value, customizationHandler: Handler<Value>) {
+    customizationHandler(value)
+}
+
