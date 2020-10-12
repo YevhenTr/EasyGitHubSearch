@@ -54,16 +54,16 @@ enum GitUserType: String {
 struct SearchUserResponse: Codable {
     
     // MARK: - Properties
-       
-       let count: Int
-       let items: [UserItem]
-       
-       // MARK: - Codable
-       
-       enum CodingKeys: String, CodingKey {
-           case count = "total_count"
-           case items
-       }
+    
+    let count: Int
+    let items: [UserItem]
+    
+    // MARK: - Codable
+    
+    enum CodingKeys: String, CodingKey {
+        case count = "total_count"
+        case items
+    }
 }
 
 struct UserItem: Codable {
