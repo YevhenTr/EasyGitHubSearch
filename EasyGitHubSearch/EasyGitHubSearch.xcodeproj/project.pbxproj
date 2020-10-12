@@ -56,6 +56,9 @@
 		62857BED2534621C0020F3B2 /* SearchUserResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62857BEC2534621C0020F3B2 /* SearchUserResponse.swift */; };
 		62857BFA253466BD0020F3B2 /* UserListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62857BF8253466BD0020F3B2 /* UserListViewController.swift */; };
 		62857BFB253466BD0020F3B2 /* UserListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 62857BF9253466BD0020F3B2 /* UserListViewController.xib */; };
+		62857BFE2534697E0020F3B2 /* GitUserPreviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62857BFC2534697E0020F3B2 /* GitUserPreviewCell.swift */; };
+		62857BFF2534697E0020F3B2 /* GitUserPreviewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 62857BFD2534697E0020F3B2 /* GitUserPreviewCell.xib */; };
+		62857C0325346F830020F3B2 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62857C0225346F830020F3B2 /* BaseViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -110,6 +113,9 @@
 		62857BEC2534621C0020F3B2 /* SearchUserResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchUserResponse.swift; sourceTree = "<group>"; };
 		62857BF8253466BD0020F3B2 /* UserListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListViewController.swift; sourceTree = "<group>"; };
 		62857BF9253466BD0020F3B2 /* UserListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserListViewController.xib; sourceTree = "<group>"; };
+		62857BFC2534697E0020F3B2 /* GitUserPreviewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitUserPreviewCell.swift; sourceTree = "<group>"; };
+		62857BFD2534697E0020F3B2 /* GitUserPreviewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GitUserPreviewCell.xib; sourceTree = "<group>"; };
+		62857C0225346F830020F3B2 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		7880B52E5BA8759A7DC6B68B /* Pods-EasyGitHubSearch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyGitHubSearch.debug.xcconfig"; path = "Target Support Files/Pods-EasyGitHubSearch/Pods-EasyGitHubSearch.debug.xcconfig"; sourceTree = "<group>"; };
 		F0105DAC7D2E285C18F93EFC /* Pods_EasyGitHubSearch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EasyGitHubSearch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -210,6 +216,7 @@
 		62857B7825337DB00020F3B2 /* Types */ = {
 			isa = PBXGroup;
 			children = (
+				62857C0125346F710020F3B2 /* BaseViewController */,
 				62857B7925337DB00020F3B2 /* SpinnerView */,
 				62857B7C25337DB00020F3B2 /* NibDesignable */,
 				62857B7E25337DB00020F3B2 /* TableAdapter */,
@@ -516,6 +523,7 @@
 		62857BF1253466560020F3B2 /* UserListViewController */ = {
 			isa = PBXGroup;
 			children = (
+				62857C00253469820020F3B2 /* Private */,
 				62857BF8253466BD0020F3B2 /* UserListViewController.swift */,
 				62857BF9253466BD0020F3B2 /* UserListViewController.xib */,
 			);
@@ -527,6 +535,23 @@
 			children = (
 			);
 			path = UserInfoViewController;
+			sourceTree = "<group>";
+		};
+		62857C00253469820020F3B2 /* Private */ = {
+			isa = PBXGroup;
+			children = (
+				62857BFC2534697E0020F3B2 /* GitUserPreviewCell.swift */,
+				62857BFD2534697E0020F3B2 /* GitUserPreviewCell.xib */,
+			);
+			path = Private;
+			sourceTree = "<group>";
+		};
+		62857C0125346F710020F3B2 /* BaseViewController */ = {
+			isa = PBXGroup;
+			children = (
+				62857C0225346F830020F3B2 /* BaseViewController.swift */,
+			);
+			path = BaseViewController;
 			sourceTree = "<group>";
 		};
 		75160473A1D645D70C47151B /* Frameworks */ = {
@@ -599,6 +624,7 @@
 			files = (
 				62857B67253377BE0020F3B2 /* LaunchScreen.storyboard in Resources */,
 				62857BFB253466BD0020F3B2 /* UserListViewController.xib in Resources */,
+				62857BFF2534697E0020F3B2 /* GitUserPreviewCell.xib in Resources */,
 				62857B712533783F0020F3B2 /* ViewController.xib in Resources */,
 				62857BBD25337DB00020F3B2 /* SpinnerView.xib in Resources */,
 				62857B64253377BE0020F3B2 /* Assets.xcassets in Resources */,
@@ -659,6 +685,7 @@
 				62857BD025337DB00020F3B2 /* UIViewController+Alerts.swift in Sources */,
 				62857BD225337DB00020F3B2 /* DateFormatter+Extension.swift in Sources */,
 				62857BD625337DB00020F3B2 /* Dictionary+Extensions.swift in Sources */,
+				62857C0325346F830020F3B2 /* BaseViewController.swift in Sources */,
 				62857BCD25337DB00020F3B2 /* UIRectCorner+Extensions.swift in Sources */,
 				62857B702533783F0020F3B2 /* ViewController.swift in Sources */,
 				62857BD725337DB00020F3B2 /* Float+Extensions.swift in Sources */,
@@ -682,6 +709,7 @@
 				62857BE625344BE30020F3B2 /* GitHubAPI.swift in Sources */,
 				62857BCF25337DB00020F3B2 /* UIViewController+Extensions.swift in Sources */,
 				62857BD125337DB00020F3B2 /* UITableView+Extensions.swift in Sources */,
+				62857BFE2534697E0020F3B2 /* GitUserPreviewCell.swift in Sources */,
 				62857BC525337DB00020F3B2 /* CGRect+Extensions.swift in Sources */,
 				62857BC025337DB00020F3B2 /* Section.swift in Sources */,
 				62857BD825337DB00020F3B2 /* Bool+Extension.swift in Sources */,

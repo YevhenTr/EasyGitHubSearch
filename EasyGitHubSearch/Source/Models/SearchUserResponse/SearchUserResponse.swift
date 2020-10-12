@@ -56,7 +56,7 @@ struct SearchUserResponse: Codable {
     // MARK: - Properties
        
        let count: Int
-       let items: [SearchUserItem]
+       let items: [UserItem]
        
        // MARK: - Codable
        
@@ -66,7 +66,7 @@ struct SearchUserResponse: Codable {
        }
 }
 
-struct SearchUserItem: Codable {
+struct UserItem: Codable {
     
     // MARK: - Properties
 
