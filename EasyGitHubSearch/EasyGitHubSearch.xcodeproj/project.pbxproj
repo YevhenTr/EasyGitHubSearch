@@ -59,6 +59,7 @@
 		62857BFE2534697E0020F3B2 /* GitUserPreviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62857BFC2534697E0020F3B2 /* GitUserPreviewCell.swift */; };
 		62857BFF2534697E0020F3B2 /* GitUserPreviewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 62857BFD2534697E0020F3B2 /* GitUserPreviewCell.xib */; };
 		62857C0325346F830020F3B2 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62857C0225346F830020F3B2 /* BaseViewController.swift */; };
+		62857C0625348AD40020F3B2 /* UserPreviewViewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62857C0525348AD40020F3B2 /* UserPreviewViewData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -116,6 +117,7 @@
 		62857BFC2534697E0020F3B2 /* GitUserPreviewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitUserPreviewCell.swift; sourceTree = "<group>"; };
 		62857BFD2534697E0020F3B2 /* GitUserPreviewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GitUserPreviewCell.xib; sourceTree = "<group>"; };
 		62857C0225346F830020F3B2 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		62857C0525348AD40020F3B2 /* UserPreviewViewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPreviewViewData.swift; sourceTree = "<group>"; };
 		7880B52E5BA8759A7DC6B68B /* Pods-EasyGitHubSearch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyGitHubSearch.debug.xcconfig"; path = "Target Support Files/Pods-EasyGitHubSearch/Pods-EasyGitHubSearch.debug.xcconfig"; sourceTree = "<group>"; };
 		F0105DAC7D2E285C18F93EFC /* Pods_EasyGitHubSearch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EasyGitHubSearch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -196,6 +198,7 @@
 		62857B7625337DB00020F3B2 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				62857C0425348AB80020F3B2 /* UserPreviewViewData */,
 				62857BEB253462020020F3B2 /* SearchUserResponse */,
 			);
 			path = Models;
@@ -554,6 +557,14 @@
 			path = BaseViewController;
 			sourceTree = "<group>";
 		};
+		62857C0425348AB80020F3B2 /* UserPreviewViewData */ = {
+			isa = PBXGroup;
+			children = (
+				62857C0525348AD40020F3B2 /* UserPreviewViewData.swift */,
+			);
+			path = UserPreviewViewData;
+			sourceTree = "<group>";
+		};
 		75160473A1D645D70C47151B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -706,6 +717,7 @@
 				62857BC425337DB00020F3B2 /* Functions.swift in Sources */,
 				62857BC225337DB00020F3B2 /* ParserError.swift in Sources */,
 				62857BC625337DB00020F3B2 /* UIImage+ImageFromColor.swift in Sources */,
+				62857C0625348AD40020F3B2 /* UserPreviewViewData.swift in Sources */,
 				62857BE625344BE30020F3B2 /* GitHubAPI.swift in Sources */,
 				62857BCF25337DB00020F3B2 /* UIViewController+Extensions.swift in Sources */,
 				62857BD125337DB00020F3B2 /* UITableView+Extensions.swift in Sources */,

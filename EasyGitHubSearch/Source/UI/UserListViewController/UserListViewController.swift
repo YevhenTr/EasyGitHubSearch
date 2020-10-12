@@ -14,7 +14,7 @@ class UserListViewController: BaseViewController {
     
     @IBOutlet var usersTableView: UITableView?
     
-    private var users = [UserItem]() {
+    private var users = [GitUserPreviewViewData]() {
         didSet {
             self.usersTableView?.reloadData()
         }
@@ -26,6 +26,12 @@ class UserListViewController: BaseViewController {
         super.viewDidLoad()
 
         self.configure()
+        
+        let user1 = GitUserPreviewViewData(avatarURL: URL(string: "https://raw.githubusercontent.com/Ashwinvalento/cartoon-avatar/master/lib/images/female/10.png"), name: "user1", type: "User")
+        let user2 = GitUserPreviewViewData(avatarURL: URL(string: "https://raw.githubusercontent.com/Ashwinvalento/cartoon-avatar/master/lib/images/male/86.png"), name: "user2", type: "Organization")
+        
+        self.users = [user1, user2]
+        
     }
     
     // MARK: - Private
@@ -54,7 +60,9 @@ extension UserListViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withCellClass: GitUserPreviewCell.self, for: indexPath)
         
-//        (cell as? GitUserPreviewCell)
+        if let model = self.users.object(at: indexPath.row), let cell = cell as? GitUserPreviewCell {
+            cell.fill(with: model)
+        }
         
         return cell
     }
