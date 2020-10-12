@@ -37,6 +37,7 @@ class UserListViewController: BaseViewController {
     // MARK: - Private
     
     private func configure() {
+        self.navigationController?.navigationBar.isHidden = true
         let usersTable = self.usersTableView
         
         usersTable?.delegate = self
