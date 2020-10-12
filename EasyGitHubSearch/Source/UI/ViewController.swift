@@ -10,9 +10,21 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    let networking = Networking(api: GitHubAPI())
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        self.networking.search(users: "Tom", page: 0) { result in
+            switch result {
+            case .failure(let error):
+                debugPrint(error.localizedDescription)
+            case .success(let list):
+                debugPrint(list.count)
+                debugPrint(list.items.first)
+            }
+            
+        }
         // Do any additional setup after loading the view.
     }
 
